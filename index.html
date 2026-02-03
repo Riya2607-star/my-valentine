@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy Valentine 💖</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ff758c, #ff7eb3);
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: white;
+      padding-top: 100px;
+    }
+    h1 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 22px;
+    }
+    button {
+      padding: 12px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 25px;
+      margin: 10px;
+      cursor: pointer;
+    }
+    .yes {
+      background: white;
+      color: #ff4f81;
+    }
+    .no {
+      background: #ff4f81;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>💘 Valentine 💘</h1>
+  <p>Will you be my Valentine?</p>
+
+  <button class="yes" onclick="yesClick()">YES 💖</button>
+  <button class="no" onclick="noClick()">NO 😅</button>
+
+  <p id="message"></p>
+
+  <script>
+    function yesClick() {
+      document.getElementById("message").innerText =
+        "Yay! 💕 You just made my day 💐";
+    }
+
+    function noClick() {
+      document.getElementById("message").innerText =
+        "Oh no 😢 I’ll still smile anyway 🌸";
+    }
+  </script>
+</body>
+</html>
